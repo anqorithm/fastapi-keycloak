@@ -1,5 +1,7 @@
 # FastAPI Keycloak Integration
 
+![Integrating FastAPI with Keycloak for Authentication](./assets/Integrating%20FastAPI%20with%20Keycloak%20for%20Authentication.jpg)
+
 This project demonstrates how to integrate [Keycloak](https://www.keycloak.org/) with a [FastAPI](https://fastapi.tiangolo.com/) application using Docker and Docker Compose for authentication.
 
 ## Table of Contents
