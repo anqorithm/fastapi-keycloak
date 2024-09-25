@@ -12,7 +12,7 @@ bearer_scheme = HTTPBearer()
 
 # Define the root endpoint
 @app.get("/")
-def read_root():
+async def read_root():
     """
     Root endpoint that provides a welcome message and documentation link.
     """
@@ -21,7 +21,7 @@ def read_root():
 
 # Define the login endpoint
 @app.post("/login", response_model=TokenResponse)
-def login(username: str = Form(...), password: str = Form(...)):
+async def login(username: str = Form(...), password: str = Form(...)):
     """
     Login endpoint to authenticate the user and return an access token.
 
@@ -37,7 +37,7 @@ def login(username: str = Form(...), password: str = Form(...)):
 
 # Define the protected endpoint
 @app.get("/protected", response_model=UserInfo)
-def protected_endpoint(
+async def protected_endpoint(
     credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
 ):
     """
