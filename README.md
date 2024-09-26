@@ -24,7 +24,7 @@ This project provides a template for securing a FastAPI application using Keyclo
 
 ## Features
 
-- **FastAPI Application**: A modern, fast web framework for building APIs with Python 3.11+.
+- **FastAPI Application**: A modern, fast web framework for building APIs with Python 3.12+.
 - **Keycloak Integration**: Secure your API endpoints with Keycloak's robust authentication and authorization features.
 - **Custom Login Endpoint**: Authenticate users via a `/login` endpoint that returns an access token.
 - **Dockerized Setup**: Use Docker and Docker Compose for seamless development and deployment.
